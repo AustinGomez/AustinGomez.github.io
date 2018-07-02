@@ -1,16 +1,4 @@
 .App {
-  height: 100vh;
+  height: calc(100vh - 10em);
   padding: 5em;
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    .links {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
 }
