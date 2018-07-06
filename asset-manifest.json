@@ -1,7 +1,10 @@
 {
-  "main.css": "static/css/main.2e2d1eb1.css",
-  "main.css.map": "static/css/main.2e2d1eb1.css.map",
-  "main.js": "static/js/main.b38bd04b.js",
-  "main.js.map": "static/js/main.b38bd04b.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.css": "static/css/main.f95aafae.css",
+  "main.css.map": "static/css/main.f95aafae.css.map",
+  "main.js": "static/js/main.bc2722d8.js",
+  "main.js.map": "static/js/main.bc2722d8.js.map",
+  "static/media/frlogo.png": "static/media/frlogo.c8ecf6d0.png",
+  "static/media/headshot.png": "static/media/headshot.abf2366a.png",
+  "static/media/lf-logo2.png": "static/media/lf-logo2.a8dc5b60.png",
+  "static/media/logo.png": "static/media/logo.3e221e7f.png"
 }
