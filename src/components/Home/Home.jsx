@@ -32,12 +32,13 @@ export default class Home extends Component {
                 </div>
             )
         })
+        
         return (
             <div className="Home">
                 <div className="top">
                     <div className="top-container">
                         <h1>Austin Gomez</h1>
-                        <h2>Web developer, designer, freelancer</h2>
+                        <h2>Placeholder</h2>
                     </div>
                     <img className="circle-img" src={headshot} alt="headshot"/>
                 </div>
@@ -51,7 +52,7 @@ export default class Home extends Component {
                 <div className="top">
                     <div className="top-container">
                         <h1>Austin Gomez</h1>
-                        <h2>Web developer, designer, freelancer</h2>
+                        <h2>Placeholder</h2>
                     </div >
                 </div>
             </div>
