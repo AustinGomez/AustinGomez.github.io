@@ -1,1 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>Austin Gomez</title><link href="/static/css/main.f95aafae.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.d064b411.js"></script></body></html>
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Austin Gomez</title>
+    <meta name="description" content="Austin Gomez web freelance">
+
+    <link rel="stylesheet" href="public/css/homepage.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header grid-container">
+            <img id="icon" src="public/img/avatar.png" class="flex-item"></img>
+            <div class="header-text">
+                <h1>Hi, I'm Austin</h1>
+                <p>I'm a web developer and designer passionate for building beautiful user interfaces.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-only contact-me grid-container container green-background">
+        <p id="mobile-contact-text">Need a stand-out website for your business? Have a cool web project you want to work on? Let's talk.</p>
+        <a href="#ex1" rel="modal:open"><button class="contact-button flex-item">Contact me</button></a>
+    </div>
+    <d class="portfolio grid-container container">
+        <h2>Sample Porfolio</h2>
+        <p>Here are a few recent design projects I've worked on.</p>
+        <img class="portfolio-card" src="public/img/dataful_mobile_card.png"></img>
+        <img class="portfolio-card" src="public/img/bistro_mobile_card.png"></img>
+        <img class="portfolio-card" src="public/img/beaches_mobile_card.png"></img>
+        <img class="portfolio-card" src="public/img/coffee_mobile_card.png"></img>
+    </d>
+    </div>
+    <div class="footer container green-background">
+        <div>Austin Gomez</div>
+        <div>hello@austingomez.me</div>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <div id="ex1" class="modal">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" required=True name="name" />
+
+            <label for="email">Email</label>
+            <input type="email" required=True name="email" />
+
+            <label for="message">Message</label>
+            <textarea type="text" rows="4" cols="50"></textarea>
+        </form>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="public/js/homepage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+</body>
+
+</html>
