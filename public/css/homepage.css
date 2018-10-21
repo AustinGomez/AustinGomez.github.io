@@ -74,6 +74,15 @@
     padding-bottom: 40px;
 }
 
+.footer a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .footer div {
     font-weight: 0 !important;
 }
