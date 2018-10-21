@@ -35,7 +35,7 @@
         <img class="portfolio-card" src="public/img/coffee_mobile_card.png"></img>
     </div>
     </div>
-    <div class="footer container green-background">
+    <div class="footer container green-background text-center">
         <div>Austin Gomez</div>
         <div>hello@austingomez.me</div>
         <i class="fab fa-github"></i>
@@ -44,15 +44,18 @@
     <div class="modal" id="contact-modal">
         <form id="contact-form">
             <label for="name">Name</label>
-            <input type="text" required=True name="name" />
+            <input type="text" required name="name" />
 
             <label for="email">Email</label>
-            <input type="email" required=True name="email" />
+            <input type="email" required name="email" />
 
             <label for="message">Message</label>
-            <textarea type="text" rows="4" cols="50"></textarea>
+            <textarea form="contact-form" name="message" type="text" rows="4" cols="50"></textarea>
         </form>
         <button id="message-button">Send</button>
+    </div>
+    <div class="modal" id="confirmed-modal">
+       <h2>Thanks for reaching out! I'll get back to you shortly.</h>
     </div>
     <script>
     window.fcWidget.init({token: "917fdc38-e678-4286-a9b8-c4d4d72c9719",host: "https://wchat.freshchat.com"});
