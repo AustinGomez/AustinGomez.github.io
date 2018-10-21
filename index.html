@@ -3,15 +3,13 @@
 <html lang="en">
 
 <head>
+    <script src="https://wchat.freshchat.com/js/widget.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Austin Gomez</title>
     <meta name="description" content="Austin Gomez web freelance">
-
     <link rel="stylesheet" href="public/css/homepage.css">
-
 </head>
-
 <body>
     <div class="container">
         <div class="header grid-container">
@@ -24,7 +22,7 @@
     </div>
     <div class="mobile-only contact-me grid-container container green-background">
         <p id="mobile-contact-text">Need a stand-out website for your business? Have a cool web project you want to work on? Let's talk.</p>
-        <a href="#ex1" rel="modal:open"><button class="contact-button flex-item">Contact me</button></a>
+        <a href="#contact-modal" rel="modal:open"><button class="contact-button flex-item">Contact me</button></a>
     </div>
     <div class="container text-center">
         <h2>Sample Porfolio</h2>
@@ -43,8 +41,8 @@
         <i class="fab fa-github"></i>
         <i class="fab fa-linkedin"></i>
     </div>
-    <div id="ex1" class="modal">
-        <form>
+    <div class="modal" id="contact-modal">
+        <form id="contact-form">
             <label for="name">Name</label>
             <input type="text" required=True name="name" />
 
@@ -54,8 +52,11 @@
             <label for="message">Message</label>
             <textarea type="text" rows="4" cols="50"></textarea>
         </form>
-        <a href="#" rel="modal:close">Close</a>
+        <button id="message-button">Send</button>
     </div>
+    <script>
+    window.fcWidget.init({token: "917fdc38-e678-4286-a9b8-c4d4d72c9719",host: "https://wchat.freshchat.com"});
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="public/js/homepage.js"></script>
