@@ -24,6 +24,7 @@
 .header.grid-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(100px, max-content));
+    justify-content: center;
 }
 
 .header-text {
@@ -97,6 +98,15 @@
 }
 
 /* contact me */
+
+.contact-me .about-text {
+    margin-bottom: 2em;
+}
+
+.contact-me hr {
+    width: 80%;
+    color: rgba(131, 130, 130, 0.81);
+}
 
 .contact-me button {
     margin-left: auto;
@@ -191,6 +201,14 @@
     .portfolio-card:target {
         border: 4px solid red;
     }   
+
+    .contact-me {
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-me .about-text {
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 767px) {
