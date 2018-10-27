@@ -81,11 +81,10 @@ hr.full-hr {
 /* portfolio */
 
 .portfolio.grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-template-rows: 3em, 3em repeat(auto-fill, minmax(100px, max-content));
     grid-column-gap: 10%;
     grid-row-gap: 20px;
-    align-items: end;
+    align-items: baseline;
     text-align: center;
     max-width: 80%;
     margin: auto auto 3em auto;
@@ -247,6 +246,10 @@ hr.full-hr {
         margin-bottom: 20px;
     }
 
+    .portfolio.grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .portfolio-card:hover {
         transform: scale(1.08);
         -webkit-transition: -webkit-transform 0.5s ease;
@@ -296,6 +299,10 @@ hr.full-hr {
     .header-container {
         padding-top: 2em;
         padding-bottom: 2em;
+    }
+
+    .portfolio.grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
 }
 
