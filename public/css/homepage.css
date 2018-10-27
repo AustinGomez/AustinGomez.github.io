@@ -1,5 +1,5 @@
 .container {
-    padding: 10px;
+    padding: 16px;
 }
 
 .flex-container {
@@ -22,9 +22,11 @@
 
 /* header */
 .header.grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: minmax(200px, 500px);
     grid-template-rows: repeat(auto-fill, minmax(100px, max-content));
     justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .header-text {
@@ -49,6 +51,25 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+
+.companies {
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, max-content));
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: end;
+}
+
+.companies-container {
+    max-width: 70%;
+    margin: auto auto auto auto;
+}
+
+.logo {
+    max-height: 150px;
+    max-width: 60%;
 }
 
 /* portfolio */
@@ -131,6 +152,10 @@
     text-align: center;
     padding-bottom: 2em;
     padding-top: 1em;
+}
+
+.contact-me .content-container {
+    max-width: 600px;
 }
 
 .contact-me:last-child {
