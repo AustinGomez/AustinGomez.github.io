@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import logo from './logo.svg'
+import { BrowserRouter as Router, Route} from "react-router-dom"
 import './App.css'
+import ReactGA from 'react-ga'
 
 import Home from './_components/Home/home'
+
+ReactGA.initialize('UA-000000-01', {
+  debug: process.env.NODE_ENV === 'development'
+});
 
 class App extends Component {
   render() {

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Modal from 'react-modal'
 import Prismic from 'prismic-javascript'
 import Fade from 'react-reveal/Fade';
+import ReactGA from 'react-ga'
 
 import './home.css'
 
@@ -17,6 +18,10 @@ const customModalStyles = {
 }
 
 Modal.setAppElement('#root')
+
+if (process.env.NODE_ENV !== 'development') {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 export default class Home extends Component {
 
@@ -82,14 +87,14 @@ export default class Home extends Component {
         const items =
             portfolioItems && portfolioItems.map((item, index) => {
                 return (
-                    <img className="portfolio-card" key={index} src={item.data && item.data.main_image.url}></img>
+                    <img alt={item.data && item.data.title} className="portfolio-card" key={index} src={item.data && item.data.main_image.url}></img>
                 )
             })
         return (
             <div className="home" >
                 <div className="container header-container">
                     <div className="header grid-container">
-                        <img id="icon" src={require('../../_images/avatar-min.png')} className="flex-item"></img>
+                        <img id="icon" alt="Austin's avatar" src={require('../../_images/avatar-min.png')} className="flex-item"></img>
                         <div className="header-text">
                             <h1>Hi, I'm Austin</h1>
                             <p>I'm a web developer and designer passionate for building beautiful user interfaces.</p>
@@ -122,8 +127,8 @@ export default class Home extends Component {
                     <div className="container text-center companies-container">
                         <h2>Some companies I've worked at</h2>
                         <div className="companies grid-container">
-                            <a href="https://www.freshii.com"><img className="logo" src={require('../../_images/freshii_logo.png')}></img></a>
-                            <a href="https://www.mlb.com/bluejays"><img className="logo" src={require('../../_images/bluejays_logo.png')}></img></a>
+                            <a href="https://www.freshii.com"><img alt="Toronto Blue Jays logo" className="logo" src={require('../../_images/freshii_logo.png')}></img></a>
+                            <a href="https://www.mlb.com/bluejays"><img alt="Freshii logo" className="logo" src={require('../../_images/bluejays_logo.png')}></img></a>
                         </div>
                     </div>
                 </Fade>
@@ -138,8 +143,8 @@ export default class Home extends Component {
                 <div className="footer container green-background text-center">
                     <div>Austin Gomez</div>
                     <div >hello@austingomez.me</div>
-                    <a className="fab fa-github fa-2x" href="https://www.github.com/austingomez" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/austin-gomez" target="_blank" className="fab fa-linkedin fa-2x"></a>
+                    <a className="fab fa-github fa-2x" href="https://www.github.com/austingomez" rel="noopener noreferrer" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/austin-gomez" target="_blank" rel="noopener noreferrer" className="fab fa-linkedin fa-2x"></a>
                     <br />
                     <div className="copyright-text">&copy; Austin Gomez 2018</div>
                 </div>
@@ -179,13 +184,4 @@ export default class Home extends Component {
             </div>
         )
     }
-}
-
-function objectifyForm(formArray) {//serialize data function
-
-    var returnArray = {};
-    for (var i = 0; i < formArray.length; i++) {
-        returnArray[formArray[i]['name']] = formArray[i]['value'];
-    }
-    return returnArray;
 }
