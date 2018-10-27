@@ -118,7 +118,7 @@ export default class Home extends Component {
                 </div>
                 <Fade>
                     <div className="container text-center companies-container">
-                        <h2>Some companies I've worked at</h2>
+                        <h2>Places I've worked</h2>
                         <div className="companies grid-container">
                             <a href="https://www.freshii.com"><img alt="Toronto Blue Jays logo" className="logo" src={require('../../_images/freshii_logo.png')}></img></a>
                             <a href="https://www.mlb.com/bluejays"><img alt="Freshii logo" className="logo" src={require('../../_images/bluejays_logo.png')}></img></a>
