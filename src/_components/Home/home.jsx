@@ -19,6 +19,10 @@ const customModalStyles = {
 
 Modal.setAppElement('#root')
 
+ReactGA.initialize('UA-128252203-1', {
+  debug: process.env.NODE_ENV === 'development'
+});
+
 if (process.env.NODE_ENV !== 'development') {
     ReactGA.pageview(window.location.pathname + window.location.search);
 }

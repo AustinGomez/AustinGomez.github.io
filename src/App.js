@@ -5,9 +5,6 @@ import ReactGA from 'react-ga'
 
 import Home from './_components/Home/home'
 
-ReactGA.initialize('UA-128252203-1', {
-  debug: process.env.NODE_ENV === 'development'
-});
 
 class App extends Component {
   render() {
