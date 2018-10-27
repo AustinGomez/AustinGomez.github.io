@@ -20,7 +20,7 @@ const customModalStyles = {
 Modal.setAppElement('#root')
 
 ReactGA.initialize('UA-128252203-1', {
-  debug: process.env.NODE_ENV === 'development'
+    debug: process.env.NODE_ENV === 'development'
 });
 
 if (process.env.NODE_ENV !== 'development') {
@@ -116,6 +116,18 @@ export default class Home extends Component {
                         <button className="contact-button flex-item" onClick={this.toggleModal}>Contact Me</button>
                     </div>
                 </div>
+                <Fade>
+                    <div className="container text-center companies-container">
+                        <h2>Some companies I've worked at</h2>
+                        <div className="companies grid-container">
+                            <a href="https://www.freshii.com"><img alt="Toronto Blue Jays logo" className="logo" src={require('../../_images/freshii_logo.png')}></img></a>
+                            <a href="https://www.mlb.com/bluejays"><img alt="Freshii logo" className="logo" src={require('../../_images/bluejays_logo.png')}></img></a>
+                        </div>
+                    </div>
+                </Fade>
+
+                <hr className="partial-hr" />
+
                 <div className="container text-center">
                     <h2>Mock Porfolio</h2>
                     <p>Here are a few recent designs I've worked on for mock business' websites.</p>
@@ -126,16 +138,7 @@ export default class Home extends Component {
                     </div>
                 </Fade>
 
-                <hr className="partial-hr" />
-                <Fade>
-                    <div className="container text-center companies-container">
-                        <h2>Some companies I've worked at</h2>
-                        <div className="companies grid-container">
-                            <a href="https://www.freshii.com"><img alt="Toronto Blue Jays logo" className="logo" src={require('../../_images/freshii_logo.png')}></img></a>
-                            <a href="https://www.mlb.com/bluejays"><img alt="Freshii logo" className="logo" src={require('../../_images/bluejays_logo.png')}></img></a>
-                        </div>
-                    </div>
-                </Fade>
+
                 <hr className="partial-hr" />
                 {/* <Fade> */}
                 <div className="container section text-center contact-bottom">
