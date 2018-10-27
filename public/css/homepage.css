@@ -2,6 +2,11 @@
     padding: 16px;
 }
 
+.section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -96,6 +101,15 @@ hr.full-hr {
     margin-bottom: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+.contact-bottom .contact-button {
+    background-color: #01A75A;
+    color: white; 
+}
+
 /* footer */
 
 .footer {
@@ -136,6 +150,11 @@ hr.full-hr {
 
 .contact-me .about-text {
     margin-bottom: 2em;
+}
+
+.partial-hr {
+    width: 80%;
+    color: rgba(131, 130, 130, 0.81);
 }
 
 .contact-me hr {
@@ -236,8 +255,8 @@ hr.full-hr {
     }
 
     .portfolio-card {
-        height: 229px;
-        width: 328px;
+        height: 299px;
+        width: 428px;
         background-size: cover;
         justify-self: center;
     }
@@ -251,10 +270,10 @@ hr.full-hr {
     }
 
     .portfolio-card:hover {
-        transform: scale(1.08);
-        -webkit-transition: -webkit-transform 0.5s ease;
-        -moz-transition: -moz-transform 0.5s ease;
-        transition: transform 0.2s ease;
+        transform: scale(1.1);
+        -webkit-transition: -webkit-transform 0.3jjjjjjjjjjjjjjs ease;
+        -moz-transition: -moz-transform 0.3s ease;
+        transition: transform 0.3s ease;
     }
 
     .contact-me {
