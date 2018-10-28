@@ -112,6 +112,11 @@ button:hover {
     font-family: inherit;
 }
 
+.contact-bottom .contact-button:hover {
+    background-color: #018648;
+    color: white;
+}
+
 /* footer */
 
 .footer {
@@ -218,6 +223,7 @@ button:hover {
     color: white;
     font-family: inherit;
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 .modal button:hover {
@@ -252,7 +258,7 @@ button:hover {
     float: right;
     border: none;
     background: none;
-    font-size: 28px;    
+    font-size: 28px;
 }
 
 /* Hide mobile only on larger screen widths */

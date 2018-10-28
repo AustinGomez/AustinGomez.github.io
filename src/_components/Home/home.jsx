@@ -13,18 +13,18 @@ const customModalStyles = {
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
+        maxWidth: '80%',
         transform: 'translate(-50%, -50%)'
     }
 }
 
-Modal.setAppElement('#root')
 
-ReactGA.initialize('UA-128252203-1', {
-    debug: process.env.NODE_ENV === 'development'
-});
 
-if (process.env.NODE_ENV !== 'development') {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+if (process.env.NODE_ENV === 'production') {
+    Modal.setAppElement('#root')
+    ReactGA.initialize('UA-128252203-1', {
+        debug: process.env.NODE_ENV !== 'production'
+    });
 }
 
 export default class Home extends Component {
@@ -84,6 +84,9 @@ export default class Home extends Component {
                 }
             })
         })
+        if (process.env.NODE_ENV === 'production') {
+            ReactGA.pageview(window.location.pathname + window.location.search);
+        }
     }
 
     render() {
